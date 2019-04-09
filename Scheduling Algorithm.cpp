@@ -100,6 +100,14 @@ int main()
 	{
 		 totalwt=+totalwt+w[i];	
 	}
+    for(i=0;i<n;i++)
+	{
+		 t[i]=w[i]+b[i];	
+	}
+    for(i=0;i<n;i++)
+	{
+		 totaltat=totaltat+t[i];	
+	}
     printf("\n Process\t    Burst Time    \tWaiting Time\t Arrival Time\t\t\n");
     for(i=0;i<n;i++)
     {        
