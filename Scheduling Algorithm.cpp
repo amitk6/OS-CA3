@@ -113,5 +113,6 @@ int main()
     {        
         printf("\n P%d\t\t\t   %d ms\t\t      %d ms\t    \t\t%d ms \t\t%d ms\n",p[i],b[i],w[i],a[i],t[i]);
     }
-    printf("Average Waiting Time : %f",totalwt/n);
+    printf("\nAverage Waiting Time : %.2f ms",totalwt/n);
+    printf("\nAverage Turn Around Time : %.2f ms",totaltat/n);
 }
