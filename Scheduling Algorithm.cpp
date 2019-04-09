@@ -96,9 +96,14 @@ int main()
 		w[i]=0;
 	}	
     }
+    for(i=1;i<n;i++)
+	{
+		 totalwt=+totalwt+w[i];	
+	}
     printf("\n Process\t    Burst Time    \tWaiting Time\t Arrival Time\t\t\n");
     for(i=0;i<n;i++)
     {        
         printf("\n P%d\t\t\t   %d\t\t      %d\t    \t\t%d\t\t",p[i],b[i],w[i],a[i]);
     }
+    printf("Average Waiting Time : %f",totalwt/n);
 }
