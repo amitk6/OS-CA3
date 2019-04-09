@@ -108,10 +108,10 @@ int main()
 	{
 		 totaltat=totaltat+t[i];	
 	}
-    printf("\n Process\t    Burst Time    \tWaiting Time\t Arrival Time\t\t\n");
+    printf("\n Process\t         Burst Time    \t  \t  Waiting Time\t\t Arrival Time\t   Turn Around Time\n");
     for(i=0;i<n;i++)
     {        
-        printf("\n P%d\t\t\t   %d\t\t      %d\t    \t\t%d\t\t",p[i],b[i],w[i],a[i]);
+        printf("\n P%d\t\t\t   %d ms\t\t      %d ms\t    \t\t%d ms \t\t%d ms\n",p[i],b[i],w[i],a[i],t[i]);
     }
     printf("Average Waiting Time : %f",totalwt/n);
 }
